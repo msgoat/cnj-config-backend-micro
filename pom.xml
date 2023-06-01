@@ -6,7 +6,7 @@
     <artifactId>cnj-config-backend-micro</artifactId>
     <version>${revision}${changelist}${sha1}</version>
     <packaging>war</packaging>
-    <description>Simple cloud native Java backend based on Eclipse MicroProfile demonstrating application configuration with MP Config</description>
+    <description>Cloud native Java backend based demonstrating application configuration with MP Config based on Eclipse MicroProfile</description>
     <properties>
         <!-- new Maven version management -->
         <revision>7.0.0</revision>

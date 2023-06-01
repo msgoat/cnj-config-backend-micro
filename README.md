@@ -1,55 +1,29 @@
 # cnj-config-backend-micro
 
-Simplest possible cloud native java application based on Eclipse Micro Profile.
+Cloud native Java backend based demonstrating application configuration with MP Config based on Eclipse MicroProfile.
+
+## Status
+
+![Build status](https://codebuild.eu-west-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiaFlDay9JdkEwcUYvbDhzc2Nsd0U0b0FzL096Tzc1NWZnZ3cybkxrRE1nd0lHTVM3N2JKUFNYeEhPaW9aRDYrVUZhUStPWDI0bXNVSVlVaW1wRXBUQXA0PSIsIml2UGFyYW1ldGVyU3BlYyI6IitGaUVTc1BralQreGZmaTgiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)
+
+## Release Information
+
+A changelog can be found in [changelog.md](changelog.md).
 
 ## Docker Pull Command
+
 `docker pull docker.cloudtrain.aws.msgoat.eu/cloudtrain/cnj-config-backend-micro`
 
-## Run this application 
+## Run this application
 
-``` 
+```shell 
 docker run --name cnj-config-backend-micro -p 8080:8080 docker.cloudtrain.aws.msgoat.eu/cloudtrain/cnj-config-backend-micro
 ```
 
-## Build this application 
+## Build this application
 
-See [cnj-config](../README.md) for build instructions.
+```shell 
+mvn clean verify -P pre-commit-stage
+```
 
-## Exposed REST endpoints
-
-### /api/v1/hello
-
-Returns a simple welcome message user in JSON format
-
-Method
-: GET
-
-URI
-: /v1/hello
-
-Parameter(s)
-: none
-
-Response
-: welcome message as JSON document
-
-Authentication type
-: none
-
-Role(s) required
-: none
-
-
-## Exposed environment variables
-
-## Exposed Ports
-
-| Port | Protocol | Description |
-| --- | --- | --- |
-| 8080 | HTTP | HTTP endpoint of this microprofile application | 
- 
-## Version / Tags
-
-| Tag(s) | Remarks |
-| --- | --- |
-| latest, 1.0.0 | first release |
+Build results: a Docker image containing a Payara Micro application.
