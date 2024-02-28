@@ -4,6 +4,10 @@ Cloud native Java backend based demonstrating application configuration
 with [MicroProfile Config](https://microprofile.io/specifications/microprofile-config/) 
 based on Eclipse MicroProfile.
 
+The application is packaged as a multi-architecture docker image which supports the following platforms:
+* linux/amd64
+* linux/arm64/v8
+
 ## Synopsis 
 
 Please check [Maven POM](pom.xml) for details on how-to integrate `MicroProfile Config`
